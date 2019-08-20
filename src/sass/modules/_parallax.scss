@@ -1,0 +1,17 @@
+.bgParallax {
+	height:195px;
+	background-image:url(../images/vinhos_salton2.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+    background-size:cover;
+	@media(min-width:768px){
+		margin-top:-30px;
+	}
+	@media(min-width:1024px){
+		height:450px;
+		width: 100%;
+	}
+	@media(min-width:1200px){
+		height:500px;
+	}
+}

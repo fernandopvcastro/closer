@@ -1,0 +1,100 @@
+.banner {
+	position:relative;
+	background-image:url(../images/banner_mobile-2.jpg);
+	background-repeat: no-repeat;
+    background-position: center center;
+	background-size: cover;
+	height:400px;
+	@media(min-width:768px){
+		height:100vh;
+		background-image:url(../images/banner_desktop-2.jpg);
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+	    background-position: center center;
+		background-size: cover;
+	}
+	&__container {
+		display:flex;
+		align-items: flex-start;
+		width:50%;
+	}
+	&__wrapper {
+		align-items: flex-start;
+		width:100%;
+	}
+	&__subtitle {
+		display:block;
+		width:100%;
+		img {
+		    display:block;
+		    height:auto;
+		    width:170%;
+		    filter: brightness( 134% )
+		    		contrast( 102% )
+		    		saturate( 72% )
+		    		blur( 0px )
+		    		hue-rotate( 316deg );
+		    transform:translate(-40%, -33%);
+		    @media(min-width:768px){
+		    	transform:translate(-40%, -14%);
+		    }
+		    @media(min-width:1000px){
+		    	width:78%;
+		    	transform:translate(8%, -21%);
+		    }
+		}
+	}
+	&__title {
+    	display:flex;
+    	justify-content:flex-end;
+		width:100%;
+	    margin-top: -110px;
+    	@media(min-width:768px){
+    		margin-top: -90px;
+    	}
+    	@media(min-width:1000px){
+			margin-top:-13px;
+    	}
+    	@media(min-width:1200px){
+    		padding-right: 190px;
+    	}
+    	@media(min-width:1400px){
+			margin-top:-110px;
+    	}
+		img {
+			display: block;
+			width:90%;
+			max-width:300px;
+			@media(min-width:1000px){
+				width:300px;
+			}
+		}
+	}
+	&__detail {
+		width:100%;
+		position:absolute;
+		left:0;
+    	transform: translateY(-84%);
+	}
+}
+
+
+@-webkit-keyframes pulse-effect {
+  	to {
+    	transform: scale(1.4);
+  	}
+}
+@keyframes pulse-effect {
+  	to {
+    	transform: scale(1.4);
+  	}
+}
+.pulse-effect:hover,
+.pulse-effect:focus,
+.pulse-effect:active {
+	animation-name: pulse-effect;
+	animation-duration: .5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}

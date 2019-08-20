@@ -1,0 +1,80 @@
+<section class="prizes">
+	<div class="title">
+		<h2 class="hidden">Confira os Prêmios</h2>
+
+		<img src="images/title-2.svg" class="title__image" alt="Confira os Prêmios">
+	</div>
+
+	<ul class="prizes__list">
+		<li class="prizes__item">
+			<img src="images/prizes-1.png" class="prizes__media" alt="Bento Gonçalves">
+
+			<p class="prizes__title">Viagem para Bento<br>Gonçalves</p>
+
+			<a href="#" class="prizes__link" data-toggle="modal" data-target="#viagemBento" title="+Detalhes">+Detalhes</a>
+		</li>
+
+		<li class="prizes__item">
+			<img src="images/prizes-2.png" class="prizes__media" alt="Mochila">
+
+			<p class="prizes__title">Kit viagem</p>
+
+			<a href="#" class="prizes__link" data-toggle="modal" data-target="#kitViagem" title="+Detalhes">+Detalhes</a>
+		</li>
+	</ul>
+</section>
+
+
+<!-- Modal 1 -->
+<div class="modal fade" id="viagemBento" tabindex="-1" aria-hidden="true">
+  	<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-body">
+        		<button type="button" class="bt-close" data-dismiss="modal" aria-label="Close">
+					<span></span>
+					<span></span>
+        		</button>
+      		
+      			<picture>
+	                <source srcset="images/prizes1-modal-desktop.png" media="(min-width:768px)">
+	                <source srcset="images/prizes1-modal-mobile.png" media="(max-width:767px)">
+	                <img src="images/prizes1-modal-mobile.png" alt="Bento Gonçalves" class="modal__media">
+	            </picture>
+
+				<div class="modal__container">
+					<img src="images/Airplaine-small.png" class="modal__detail" alt="Avião">
+
+	        		<p class="modal__title">Viagem para<span>Bento</span>Gonçalves</p>
+
+	        		<p class="modal__description">
+	        			Serão 3 dias incríveis em uma cidade que respira o mundo do vinho. Além de conhecer a Bento Gonçalves, os premiados poderão desfrutar de uma programação exclusiva e feita apenas para os masters da Wine Eventos. Degustações, passeios, jantares especiais e muita festa!
+	        		</p>
+        		</div>
+      		</div>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="kitViagem" tabindex="-1" aria-hidden="true">
+  	<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-body content-center">
+        		<button type="button" class="bt-close" data-dismiss="modal" aria-label="Close">
+					<span></span>
+					<span></span>
+        		</button>
+      		
+                <img src="images/prizes2-modal-desktop.png" alt="Mochila" class="modal__media">
+
+				<div class="modal__container">
+	        		<p class="modal__title">Kit Viagem</p>
+
+	        		<p class="modal__description">
+	        			Os embaixadores ganham o Kit especial viagem: 1 pashimina; 1 mochila e 1 bag para duas garrafas.
+	        		</p>
+        		</div>
+      		</div>
+    	</div>
+  	</div>
+</div>

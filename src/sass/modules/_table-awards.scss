@@ -1,0 +1,97 @@
+.table-awards {
+	background-color:#f3f3f3;
+	padding:60px 0 130px;
+	&__title {
+		font-family:'SegoeUI-Light', Arial, Helvetica, sans-serif;
+		font-size: 30px;
+		line-height: 2;
+		color: #7e7b7c;
+		text-align: center;
+		text-transform:uppercase;
+	}
+	&__subtitle {
+		font-family:'SegoeUI', Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		line-height: 2;
+		color: #7e7b7c;
+		text-align:center;
+		padding:15px 0 40px;
+	}
+	&__container {
+		width:100%;
+		max-width:1013px;
+		margin:0 auto;
+		overflow-x:scroll;
+		@media(min-width:890px){
+			overflow-x:none;
+		}
+		table {
+			border-collapse:collapse;
+		    border-spacing: 0;
+		    width: 100%;
+    		max-width: 100%;
+    		min-width:890px;
+			tr {
+				background:url(../images/line-H.png) repeat-x bottom left transparent;
+				th {
+					font-family:'SegoeUI', Arial, Helvetica, sans-serif;
+					font-size: 15px;
+					line-height: 1.33;
+					letter-spacing: 3px;
+					text-align: center;
+					color: #000;
+					text-transform:uppercase;
+					width:25%;
+					padding:30px 0 35px;
+					background:url(../images/line-V.png) repeat-y top right transparent;
+					position:relative;
+					&.bg_th {
+						&:after {
+							content:'';
+							display:block;
+							width:63px;
+							height:54px;
+							background:url(../images/bg_th.svg) no-repeat 0 0 transparent;
+							position:absolute;
+							bottom:15px;
+							right:20px;
+						}
+					}
+					&:last-child {
+						background:none;
+					}
+				}
+				td {
+					font-family:'SegoeUI', Arial, Helvetica, sans-serif;
+					font-size: 14px;
+					line-height: 1.33;
+					letter-spacing: 3px;
+					text-align: center;
+					color: #000;
+					width:25%;
+					background:url(../images/line-V.png) repeat-y top right transparent;
+					position:relative;
+					padding:21px 15px;
+					vertical-align:middle;
+					&.bg_col1 {
+						font-family:'SegoeUI-Bold', Arial, Helvetica, sans-serif;
+						&:before {
+							content:'';
+							display:block;
+							width:26px;
+							height:26px;
+							background:url(../images/bg_col1.svg) no-repeat 0 0 transparent;
+							position:absolute;
+							left:0;
+							top:50%;
+					        transform:translateY(-70%);
+						}
+					}
+					&:last-child {
+						background:none;
+					}
+				}
+			}
+		}
+	}
+}
