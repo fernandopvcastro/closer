@@ -28,7 +28,7 @@
 		width:100%;
 		display: block;
 		margin: 0 auto;
-		padding-bottom:60px;
+		padding-bottom:30px;
 		@media (min-width:950px){
 		}
 	}
@@ -41,7 +41,11 @@
 	&__image {
 		display:block;
 		width:100%;
+		max-width:460px;
 	    margin: 0 auto;
+	}
+	&__col {
+		padding-bottom:25px;
 	}
 	&__title {
 		color: #000;
@@ -78,6 +82,12 @@
 			color: #FFF;
 			text-decoration:none;
 		}
+		@media(min-width:768px){
+			transition:.3s;
+			&:hover {
+				box-shadow: 0 10px 20px 0 rgba(235,174,80,.3);
+			}
+		}
 	}
 	.slick-arrow {
 		width:36px;
@@ -98,10 +108,24 @@
 		background-image:none;
 		left:50%;
 		z-index: 99;
+		&:after {
+			content:'';
+			display:block;
+			height: 11px;
+			width: 6px;
+			border: 1px solid #000;
+		}
 	}
 	.slick-next {
 		background-image:none;
 		right:50%;
 		z-index: 99;
+		&:after {
+			content:'';
+			display:block;
+			height: 11px;
+			width: 6px;
+			border: 1px solid #000;
+		}
 	}
 }
