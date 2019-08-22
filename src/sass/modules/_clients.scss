@@ -16,6 +16,12 @@
 		flex-flow: row wrap;
 	    justify-content: space-between;
         align-items: center;
+		@media(min-width:400px){
+	    	justify-content:space-around;
+		}
+		@media(min-width:650px){
+	    	justify-content:center;
+		}
 		@media(min-width:768px){
 	    	justify-content: center;
 		}

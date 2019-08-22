@@ -1,5 +1,5 @@
-.benefits {
-	background-color: #fff;
+.services {
+	background-color: #212529;
 	padding-bottom:50px;
 	@media(min-width:768px){
 		padding-bottom:140px;
@@ -9,26 +9,13 @@
 		font-size: 30px;
 		font-weight: 600;
 		line-height: 45px;
-		color: #000;
+		color: #fff;
 		text-align: center;
 		padding:50px 0 40px;
 		@media(min-width:768px){
 			font-size: 52px;
 			line-height: 63px;
 			letter-spacing: -0.26px;
-		}
-	}
-	&__subtitle {
-		display:none;
-		@media(min-width:768px){
-			display:block;
-			font-family:'Montserrat', Arial, sans-serif;
-			font-size: 20px;
-			font-weight: 500;
-			line-height: 30px;
-			color: #9B9B9B;
-			text-align: center;
-			padding-bottom:60px;
 		}
 	}
 	&__link {
@@ -52,7 +39,7 @@
 	}
 }
 
-.benefit {
+.service {
 	&__list {
 		display:flex;
 		flex-flow: row wrap;
@@ -82,7 +69,7 @@
 		font-size: 24px;
 		font-weight: 600;
 		line-height: 35px;
-		color: #000;
+		color: #fff;
 		text-align: center;
 		padding:0 10px;
 		@media(min-width:768px){
