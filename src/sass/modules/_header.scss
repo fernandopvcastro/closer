@@ -1,8 +1,12 @@
 .header {
 	background-color:#fff;
-	box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.5), 0 4px 24px 0 rgba(37,38,94,0.1);
 	position:fixed;
 	width:100%;
+	transition:.3s;
+	z-index:222!important;
+	&.active {
+		box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.5), 0 4px 24px 0 rgba(37,38,94,0.1);
+	}
 	&__container {
 		height:64px;
 		width:100%;
@@ -65,6 +69,10 @@
 		outline:none;
 		cursor:pointer;
 		display:block;
+		&:hover {
+			text-decoration:none;
+			color: #000;
+		}
 		@media(min-width:375px){
 			font-size:12px;
 		}
@@ -72,17 +80,28 @@
 			font-size: 13px;
 			line-height:38px;
 			font-weight: 600;
-			color: #BEC7D1;
 			width:145px;
 			height:40px;
-			border:1px solid #BEC7D1;
 			border-radius:20px;
 			transition:.3s;
-			&.active, &:hover {
+			&.yellow {
 				background-color: #EBAE50;
 				border:1px solid #EBAE50;
 				color:#fff;
-				text-decoration:none;
+				&:hover {
+					color:#fff;
+					box-shadow: 0 10px 20px 0 rgba(235,174,80,.3);
+				}
+			}
+			&.white {
+				background-color:#fff;
+				border:1px solid #BEC7D1;
+				color: #BEC7D1;
+				&:hover {
+					color: #000;
+					background-color:#BEC7D1;
+					box-shadow: 0 10px 20px 0 rgba(189,198,208,.5);
+				}
 			}
 		}
 	}

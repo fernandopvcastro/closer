@@ -1,0 +1,113 @@
+.steps {
+	background-color: #F4F3EE;
+	padding-bottom:50px;
+	@media(min-width:768px){
+		padding-bottom:217px;
+	}
+	&__title {
+		font-family:'new_york_largeregular', Arial, sans-serif;
+		font-size: 30px;
+		font-weight: 600;
+		line-height: 45px;
+		color: #000;
+		text-align: center;
+		padding:50px 0 40px;
+		@media(min-width:768px){
+			font-size: 52px;
+			line-height: 63px;
+			letter-spacing: -0.26px;
+		}
+	}
+	&__subtitle {
+		display:none;
+		@media(min-width:768px){
+			display:block;
+			font-family:'Montserrat', Arial, sans-serif;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 30px;
+			color: #9B9B9B;
+			text-align: center;
+			padding-bottom:60px;
+		}
+	}
+	&__link {
+		display:block;
+		margin:20px auto 0;
+		height: 50px;
+		width: 160px;
+		background-color: #EBAE50;
+		color: #FFF;
+		font-family:'Montserrat', Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 50px;
+		text-align: center;
+		border-radius:30px;
+		cursor:pointer;
+		&:hover {
+			color: #FFF;
+			text-decoration:none;
+		}
+	}
+}
+
+.step {
+	&__list {
+		display:flex;
+		flex-flow: row wrap;
+	    justify-content: space-between;
+        align-items: center;
+		@media(min-width:768px){
+	    	justify-content: center;
+    	    align-items: baseline;
+		}
+	}
+	&__item {
+		padding-bottom:50px;
+		@media(min-width:768px){
+			width:50%;
+		}
+		@media(min-width:1200px){
+			width:33.33333%;
+		}
+	}
+	&__image {
+		display:block;
+		margin:0 auto;
+	}
+	&__number {
+		display:block;
+		font-family:'Montserrat', Arial, sans-serif;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 25px;
+		color: #EBAE50;
+		text-align: center;
+		padding:10px 0;
+	}
+	&__title {
+		font-family:'new_york_largeregular', Arial, sans-serif;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 35px;
+		color: #000;
+		text-align: center;
+		padding:0 10px;
+		@media(min-width:768px){
+			padding:15px 15% 0;
+		}
+	}
+	&__description {
+		font-family:'Montserrat', Arial, sans-serif;
+		font-size: 16px;	
+		font-weight: 500;
+		line-height: 25px;
+		color: #9B9B9B;
+		text-align: center;
+		padding:15px 15px 0;
+		@media(min-width:768px){
+			padding:15px 15% 0;
+		}
+	}
+}
