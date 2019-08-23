@@ -1,5 +1,4 @@
 .video-area {
-	margin-top:50px;
 	background-color: #F4F3EE;
 	padding-bottom:100px;
 	@media(min-width:768px){
@@ -24,6 +23,8 @@
 		padding:50px 0 64px;
 		@media(min-width:768px){
 			width:40%;
+			font-size: 52px;
+			line-height: 63px;
 		}
 	}
 	&__content {
@@ -33,7 +34,7 @@
 		.video {
 			position:relative;
 			height:0;
-			padding-top:51.21%;
+			padding-top:56.25%;
 			iframe {
 				position:absolute;
 				top:0;
