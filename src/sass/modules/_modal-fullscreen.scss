@@ -43,9 +43,21 @@
         }
     }
 
+    &__subtitle {
+        font-family: $new-york;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 45px;
+        color: #000000;
+    }
+
     &__description {
         font-size: 14px;
         color: #9B9B9B;
+        
+        &_md {
+            font-size: 16px;
+        }
     }
 
     // modifiers
