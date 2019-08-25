@@ -1,0 +1,62 @@
+.modal-fullscreen {
+    &__body {
+        padding: 0;
+        overflow: auto;
+    }
+
+    &__dialog {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__header {
+        padding-top: 35px;
+        margin-bottom: 80px;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__content {
+      height: auto;
+      min-height: 100%;
+      border-radius: 0;
+      border: 0;
+      background-color: #F4F3EE;
+    }
+
+    &__title {
+        font-family: $new-york;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 45px;
+        color: #000000;
+        max-width: 400px;
+        margin-bottom: 35px;
+    }
+
+    // modifiers
+
+    &_white {
+        background: #FFFFFF;
+        position: fixed;
+        left: 5%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .modal-fullscreen {
+        &__container {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        &_white {
+            left: 0;
+        }
+    }
+}
