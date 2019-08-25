@@ -19,6 +19,7 @@
 
     &__container {
         position: relative;
+        margin-bottom: 190px;
     }
 
     &__content {
@@ -36,7 +37,15 @@
         line-height: 45px;
         color: #000000;
         max-width: 400px;
-        margin-bottom: 35px;
+
+        &_full {
+            max-width: 100%;
+        }
+    }
+
+    &__description {
+        font-size: 14px;
+        color: #9B9B9B;
     }
 
     // modifiers
@@ -44,7 +53,6 @@
     &_white {
         background: #FFFFFF;
         position: fixed;
-        left: 5%;
     }
 }
 
@@ -53,10 +61,6 @@
         &__container {
             padding-left: 30px;
             padding-right: 30px;
-        }
-
-        &_white {
-            left: 0;
         }
     }
 }

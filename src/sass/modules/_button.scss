@@ -10,4 +10,21 @@
     border-radius: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
+
+    &:hover {
+        background-color: #FFFFFF;
+        color: #ebae50;
+        border: 1px solid #ebae50;
+    }
+
+    &_back {
+        background-color: transparent;
+        border: 1px solid #BEC7D1;
+        color: #BEC7D1;
+        &:hover {
+            background-color: #BEC7D1;
+            color: #FFFFFF;
+            border: 1px solid #BEC7D1;
+        }
+    }
 }

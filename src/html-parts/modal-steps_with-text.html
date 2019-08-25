@@ -1,9 +1,8 @@
 <div
-    class="modal modal-fullscreen modal-steps fade"
+    class="modal modal-fullscreen modal-steps_with-text fade"
     tabindex="-1"
     role="dialog"
     aria-hidden="true"
-
 >
   <div class="modal-dialog modal-fullscreen__dialog h-100">
     <div class="modal-content modal-fullscreen__content h-100">
@@ -26,9 +25,18 @@
                                 </div>
 
                                 <div class="row" style="margin-bottom: 35px;">
-                                    <h3 class="modal-fullscreen__title">
-                                        Let’s get started. How many employees work at your company?
+                                    <h3 class="modal-fullscreen__title pb-4">
+                                        Our closers do not do cold-calling or prospecting.
                                     </h3>
+                                    <p class="modal-fullscreen__description pb-4">
+                                        Our closers specialize in converting unconverted leads (so money you may be leaving on the table)
+                                        and closing inbound or warm-leads - all on a performance-basis. While they close, we take care of
+                                        all of their training, systems, and ensuring they maintain a high-minimum closing ratio for you -
+                                        so you don’t need to add complexity to what you do.
+                                    </p>
+                                    <p class="modal-fullscreen__description">
+                                        Can you confirm you are looking for our closers to help you convert unconverted leads / close inbound or warm leads?
+                                    </p>
                                 </div>
 
                                 <div class="row">
@@ -63,17 +71,28 @@
                                             More Than 1000
                                           </label>
                                         </div>
-                                        <div class="form-group" style="margin-top: 80px;">
-                                            <button
-                                                type="submit"
-                                                class="btn button col-md-4"
-                                                data-toggle="modal"
-                                                data-target=".modal-steps_with-text"
-                                                class="navigation__link yellow"
-                                                title="Hire Closers"
-                                            >
-                                                Next
-                                            </button>
+                                        <div class="form-group col-md-12" style="margin-top: 80px;">
+                                            <div class="row">
+                                                <button
+                                                    class="btn button button_back col-md-4 mr-3"
+                                                    data-toggle="modal"
+                                                    data-target=".modal-steps"
+                                                    class="navigation__link yellow"
+                                                    title="Back"
+                                                >
+                                                    Back
+                                                </button>
+                                                <button
+                                                    type="submit"
+                                                    class="btn button col-md-4"
+                                                    data-toggle="modal"
+                                                    data-target=".modal-steps-next"
+                                                    class="navigation__link yellow"
+                                                    title="Next"
+                                                >
+                                                    Next
+                                                </button>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
